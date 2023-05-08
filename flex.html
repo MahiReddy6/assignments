@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .border {
+        height: 100px;
+        width: 600px;
+        border: 1px solid black;
+      }
+
+      header div {
+        background: rgb(144, 238, 144);
+      }
+
+      .mainbanner {
+        background-color: rgb(255, 160, 122);
+      }
+
+      .contact-form {
+        background-color: rgb(255, 1254, 224);
+      }
+
+      section .border {
+        background-color: rgb(173, 217, 230);
+      }
+
+      footer div {
+        background-color: rgb(144, 238, 144);
+      }
+
+      .maincontent {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+      }
+
+      main {
+        display: flex;
+      }
+
+      section div {
+        max-width: 200px;
+        /* height: 200px; */
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="maincontent">
+      <div class="container">
+        <header>
+          <div class="border">Header</div>
+        </header>
+        <main>
+          <div class="border mainbanner">Main banner</div>
+          <div class="border contact-form">Contact form</div>
+        </main>
+
+        <section>
+          <div class="border">First post</div>
+          <div class="border">Second post</div>
+          <div class="border">Third post</div>
+          <div class="border">Fourth post</div>
+          <div class="border">Fifth post</div>
+          <div class="border">Sixth post</div>
+        </section>
+        <footer>
+          <div class="border">footer</div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
